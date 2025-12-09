@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="./utilities.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="flex page-header">
+            <div class="menu flex">
+                <div class="menu-icon-box flex">
+                    <i class="fa-solid fa-bars icon-color"></i>
+                </div>
+                <h1>Carousel</h1>
+            </div>
+            <div class="social-links flex">
+                <div class="app-icons flex">
+                    <i class="fa-brands fa-facebook icon-color"></i>
+                    <p>Facebook</p>
+                </div>
+                <div class="app-icons flex">
+                    <i class="fa-brands fa-twitter icon-color"></i>
+                    <p>Twitter</p>
+                </div>
+                <div class="app-icons flex">
+                    <i class="fa-brands fa-discord icon-color"></i>
+                    <p>Discord</p>
+                </div>
+                <div class="app-icons flex">
+                    <i class="fa-brands fa-reddit icon-color"></i>
+                    <p>Reddit</p>
+                </div>
+                <div class="app-icons flex">
+                    <i class="fa-brands fa-twitch icon-color"></i>
+                    <p>Twitch</p>
+                </div>
+            </div>
+            <div class="login-box">
+                <button class="primary-btn">Log In</button>
+            </div>
+        </div>
+    </header>
+    <section class="carousel-wrapper">
+        <div class="container slider-container">
+            <div class="slider" data-slide-index="0">
+                <div class="slider-image flex">
+                    <div class="image">
+                        <img src="./images/beautiful-natural-image-1844362_1280.jpg" alt="" class="carousel-image">
+                    </div>
+                </div>
+                <div class="slider-items flex">
+                    <div class="slider-details flex">
+                        <h3 class="rank">#1 spotlight</h3>
+                        <h2 class="title">Lorem ipsum dolor sit amet. Lorem, ipsum.</h2>
+                        <div class="stats flex">
+                            <div class="stats-detail flex">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>2</span>
+                            </div>
+                            <div class="stats-detail flex">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>5:56</span>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus quae voluptate
+                                voluptatibus laboriosam eligendi sequi quod recusandae qui natus.Lorem ipsum dolor sit,
+                                amet
+                                consectetur adipisicing elit. Reiciendis in, ratione at dolor doloribus dignissimos
+                                provident! Adipisci quis obcaecati incidunt similique, voluptatibus necessitatibus!</p>
+                        </div>
+                        <div class="related-btn flex">
+                            <button class="primary-btn play ">Play</button>
+                            <button class="additional-detail-btn primary-btn">Details ></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slider" data-slide-index="1">
+                <div class="slider-image flex">
+                    <div class="image">
+                        <img src="./images/bird-8788491_1280.jpg" alt="" class="carousel-image">
+                    </div>
+                </div>
+                <div class="slider-items flex">
+                    <div class="slider-details flex">
+                        <h3 class="rank">#1 spotlight</h3>
+                        <h2 class="title">Lorem ipsum dolor sit amet.</h2>
+                        <div class="stats flex">
+                            <div class="stats-detail flex">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>2</span>
+                            </div>
+                            <div class="stats-detail flex">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>5:56</span>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus quae voluptate
+                                voluptatibus laboriosam eligendi sequi quod recusandae qui natus.Lorem ipsum dolor sit,
+                                amet
+                                olor doloribus dignissimos
+                                provident! Adipisci quis obcaecati incidunt similique, voluptatibus necessitatibus!</p>
+                        </div>
+                        <div class="related-btn flex">
+                            <button class="primary-btn play ">Play</button>
+                            <button class="additional-detail-btn primary-btn">Details ></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slider" data-slide-index="2">
+                <div class="slider-image flex">
+                    <div class="image">
+                        <img src="./images/blackandwhite-image-2048x1365.webp" alt="" class="carousel-image">
+                    </div>
+                </div>
+                <div class="slider-items flex">
+                    <div class="slider-details flex">
+                        <h3 class="rank">#1 spotlight</h3>
+                        <h2 class="title"> ipsum dolor sit amet. Lorem</h2>
+                        <div class="stats flex">
+                            <div class="stats-detail flex">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>2</span>
+                            </div>
+                            <div class="stats-detail flex">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>5:56</span>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus quae voluptate
+                                voluptatibus laboriosam eligendi sequi quod recusandae qui natus.Lorem ipsum dolor sit,
+                                amet
+                            </p>
+                        </div>
+                        <div class="related-btn flex">
+                            <button class="primary-btn play ">Play</button>
+                            <button class="additional-detail-btn primary-btn">Details ></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slider" data-slide-index="3">
+                <div class="slider-image flex">
+                    <div class="image">
+                        <img src="./images/istockphoto-1035676256-612x612.jpg" alt="" class="carousel-image">
+                    </div>
+                </div>
+                <div class="slider-items flex">
+                    <div class="slider-details flex">
+                        <h3 class="rank">#1 spotlight</h3>
+                        <h2 class="title">Lorem ipsum dLorem, ipsum.</h2>
+                        <div class="stats flex">
+                            <div class="stats-detail flex">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>2</span>
+                            </div>
+                            <div class="stats-detail flex">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>5:56</span>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus quae voluptate
+                                .Lorem ipsum dolor sit,
+                                amet
+                                consectetur adipisicing elit. Reiciendis in, ratione at dolor doloribus dignissimos
+                                provident! Adipisci quis obcaecati incidunt similique, voluptatibus necessitatibus!</p>
+                        </div>
+                        <div class="related-btn flex">
+                            <button class="primary-btn play ">Play</button>
+                            <button class="additional-detail-btn primary-btn">Details ></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slider" data-slide-index="4">
+                <div class="slider-image flex">
+                    <div class="image">
+                        <img src="./images/media.png" alt="" class="carousel-image">
+                    </div>
+                </div>
+                <div class="slider-items flex">
+                    <div class="slider-details flex">
+                        <h3 class="rank">#1 spotlight</h3>
+                        <h2 class="title">Lorem ipsum dolor sit amet. Lorem, ipsum.</h2>
+                        <div class="stats flex">
+                            <div class="stats-detail flex">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>2</span>
+                            </div>
+                            <div class="stats-detail flex">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>5:56</span>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus quae voluptate
+                                voluptatibus laboriosam eligendi sequi quod recusandae qui natus.Lorem ipsum dolor sit,
+                                amet
+                                cidunt similique, voluptatibus necessitatibus!</p>
+                        </div>
+                        <div class="related-btn flex">
+                            <button class="primary-btn play ">Play</button>
+                            <button class="additional-detail-btn primary-btn">Details ></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slider" data-slide-index="5">
+                <div class="slider-image flex">
+                    <div class="image">
+                        <img src="./images/pexels-photo-3094799.jpeg" alt="" class="carousel-image">
+                    </div>
+                </div>
+                <div class="slider-items flex">
+                    <div class="slider-details flex">
+                        <h3 class="rank">#1 spotlight</h3>
+                        <h2 class="title">Lorem ipsum dolor sit .</h2>
+                        <div class="stats flex">
+                            <div class="stats-detail flex">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>2</span>
+                            </div>
+                            <div class="stats-detail flex">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>5:56</span>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus quae voluptate
+                                voluptatibus laboriosam eligendi sequi quod recusandae qui natus.Lorem ipsum dolor sit,
+                                amet
+                                consectetur adipisicing elit. Reiciendis in, ratione at dolor doloribus dignissimos
+                                provident! Adipisci quis obcaecati incidunt similique, voluptatibus necessitatibus!</p>
+                        </div>
+                        <div class="related-btn flex">
+                            <button class="primary-btn play ">Play</button>
+                            <button class="additional-detail-btn primary-btn">Details ></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slider-nav-btn flex">
+                <div class="rel flex">
+                    <button class="prev base-btn-style">&#8666;</button>
+                    <button class="next base-btn-style">&#8667;</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="indicator-path">
+                <div class="indicator"></div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="card-slider-section">
+        <div class="video-bg-wrapper">
+            <video class="video-bg" muted playsinline loop autoplay>
+                <source src="./images/5507_Fiber_Optics_1280x720.mp4" media="(max-width:468px)">
+                <source src="./images/Fiber_Optics_1920x1080.mp4" media="(min-width:500px)">
+            </video>
+            <div class="overlay"></div>
+        </div>
+        <div class="container flex card-slider-container">
+            <div class="swiper">
+                <div class="slide-container flex">
+                    <div class="swiper-wrapper">
+                        <!-- swiper cards -->
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/blackandwhite-image-2048x1365.webp" alt="red wired"
+                                        class="carousel-image card-bg-image">
+                                </div>
+
+                                <div class="card-content flex">
+                                    <div class="card-content-box">
+                                        <div class="card-header flex">
+                                            <div class="main-header flex">
+                                                <h3 class="rank card-rank">01</h3>
+                                                <h2 class="card-name">Power Rangers</h2>
+                                            </div>
+                                            <div class="rating-wrapper flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="rating">4.3</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/beach.jpeg" alt="red wired" class="carousel-image card-bg-image">
+                                </div>
+
+                                <div class="card-content flex">
+                                    <div class="card-content-box">
+                                        <div class="card-header flex">
+                                            <div class="main-header flex">
+                                                <h3 class="rank card-rank">01</h3>
+                                                <h2 class="card-name">Power Rangers</h2>
+                                            </div>
+                                            <div class="rating-wrapper flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="rating">4.3</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/beautiful-natural-image-1844362_1280.jpg" alt="red wired"
+                                        class="carousel-image card-bg-image">
+                                </div>
+
+                                <div class="card-content flex">
+                                    <div class="card-content-box">
+                                        <div class="card-header flex">
+                                            <div class="main-header flex">
+                                                <h3 class="rank card-rank">01</h3>
+                                                <h2 class="card-name">Power Rangers</h2>
+                                            </div>
+                                            <div class="rating-wrapper flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="rating">4.3</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/bird-8788491_1280.jpg" alt="red wired"
+                                        class="carousel-image card-bg-image">
+                                </div>
+
+                                <div class="card-content flex">
+                                    <div class="card-content-box">
+                                        <div class="card-header flex">
+                                            <div class="main-header flex">
+                                                <h3 class="rank card-rank">01</h3>
+                                                <h2 class="card-name">Power Rangers</h2>
+                                            </div>
+                                            <div class="rating-wrapper flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="rating">4.3</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/boat.jpeg" alt="red wired" class="carousel-image card-bg-image">
+                                </div>
+
+                                <div class="card-content flex">
+                                    <div class="card-content-box">
+                                        <div class="card-header flex">
+                                            <div class="main-header flex">
+                                                <h3 class="rank card-rank">01</h3>
+                                                <h2 class="card-name">Power Rangers</h2>
+                                            </div>
+                                            <div class="rating-wrapper flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="rating">4.3</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/game-console.jpg" alt="red wired"
+                                        class="carousel-image card-bg-image">
+                                </div>
+
+                                <div class="card-content flex">
+                                    <div class="card-content-box">
+                                        <div class="card-header flex">
+                                            <div class="main-header flex">
+                                                <h3 class="rank card-rank">01</h3>
+                                                <h2 class="card-name">Power Rangers</h2>
+                                            </div>
+                                            <div class="rating-wrapper flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="rating">4.3</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/istockphoto-1035676256-612x612.jpg" alt="red wired"
+                                        class="carousel-image card-bg-image">
+                                </div>
+
+                                <div class="card-content flex">
+                                    <div class="card-content-box">
+                                        <div class="card-header flex">
+                                            <div class="main-header flex">
+                                                <h3 class="rank card-rank">01</h3>
+                                                <h2 class="card-name">Power Rangers</h2>
+                                            </div>
+                                            <div class="rating-wrapper flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="rating">4.3</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/bird.jpeg" alt="red wired" class="carousel-image card-bg-image">
+                                </div>
+
+                                <div class="card-content flex">
+                                    <div class="card-content-box">
+                                        <div class="card-header flex">
+                                            <div class="main-header flex">
+                                                <h3 class="rank card-rank">01</h3>
+                                                <h2 class="card-name">Power Rangers</h2>
+                                            </div>
+                                            <div class="rating-wrapper flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="rating">4.3</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/media.png" alt="red wired" class="carousel-image card-bg-image">
+                                </div>
+
+                                <div class="card-content flex">
+                                    <div class="card-content-box">
+                                        <div class="card-header flex">
+                                            <div class="main-header flex">
+                                                <h3 class="rank card-rank">01</h3>
+                                                <h2 class="card-name">Power Rangers</h2>
+                                            </div>
+                                            <div class="rating-wrapper flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="rating">4.3</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/mountain.jpeg" alt="red wired"
+                                        class="carousel-image card-bg-image">
+                                </div>
+
+                                <div class="card-content flex">
+                                    <div class="card-content-box">
+                                        <div class="card-header flex">
+                                            <div class="main-header flex">
+                                                <h3 class="rank card-rank">01</h3>
+                                                <h2 class="card-name">Power Rangers</h2>
+                                            </div>
+                                            <div class="rating-wrapper flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="rating">4.3</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/retro.jpeg" alt="red wired" class="carousel-image card-bg-image">
+                                </div>
+
+                                <div class="card-content flex">
+                                    <div class="card-content-box">
+                                        <div class="card-header flex">
+                                            <div class="main-header flex">
+                                                <h3 class="rank card-rank">01</h3>
+                                                <h2 class="card-name">Power Rangers</h2>
+                                            </div>
+                                            <div class="rating-wrapper flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="rating">4.3</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/retro-car.jpeg" alt="red wired"
+                                        class="carousel-image card-bg-image">
+                                </div>
+
+                                <div class="card-content flex">
+                                    <div class="card-content-box">
+                                        <div class="card-header flex">
+                                            <div class="main-header flex">
+                                                <h3 class="rank card-rank">01</h3>
+                                                <h2 class="card-name">Power Rangers</h2>
+                                            </div>
+                                            <div class="rating-wrapper flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="rating">4.3</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/planet-9934703_1280.jpg" alt="red wired"
+                                        class="carousel-image card-bg-image">
+                                </div>
+
+                                <div class="card-content flex">
+                                    <div class="card-content-box">
+                                        <div class="card-header flex">
+                                            <div class="main-header flex">
+                                                <h3 class="rank card-rank">01</h3>
+                                                <h2 class="card-name">Power Rangers</h2>
+                                            </div>
+                                            <div class="rating-wrapper flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="rating">4.3</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./images/photo-1594531405613-de69af2ee1ca.jpeg" alt="red wired"
+                                        class="carousel-image card-bg-image">
+                                </div>
+
+                                <div class="card-content flex">
+                                    <div class="card-content-box">
+                                        <div class="card-header flex">
+                                            <div class="main-header flex">
+                                                <h3 class="rank card-rank">01</h3>
+                                                <h2 class="card-name">Power Rangers</h2>
+                                            </div>
+                                            <div class="rating-wrapper flex">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="rating">4.3</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="buttons-box">
+                <button class="card-slider-prev-btn base-btn-style"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="card-slider-next-btn base-btn-style"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
