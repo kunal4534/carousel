@@ -1,5 +1,4 @@
 
-
 const sliders = document.querySelectorAll(".slider");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
@@ -9,6 +8,7 @@ const sliderContainer = document.querySelector(".slider-container");
 const videoBg = document.querySelector(".video-bg");
 const cardSliderPrevBtn = document.querySelector(".card-slider-prev-btn");
 const cardSliderNxtBtn = document.querySelector(".card-slider-next-btn");
+
 
 const sliderLength = sliders.length - 1;
 const indicatorWidth = (100 / sliders.length).toFixed(2);
@@ -27,7 +27,6 @@ videoBg.playbackRate = 0.9;
 sliderContainer.addEventListener("pointerdown", (e) => {
   isDragging = true;
   startX = e.clientX;
-  console.log("pointerdown")
 
 });
 sliderContainer.addEventListener("pointermove", (e) => {
@@ -35,18 +34,17 @@ sliderContainer.addEventListener("pointermove", (e) => {
   e.preventDefault();
   endX = e.clientX;
 
-
-  if (endX == 0) startX = 0;
-  const distance = endX - startX;
-
-  if (Math.abs(distance) < 80) return;
-  if (distance < 0) nextBtn.click();
-  else prevBtn.click();
-
+  
   
 });
 sliderContainer.addEventListener("pointerup", (e) => {
   isDragging = false;
+  if (endX == 0) startX = 0;
+  const distance = endX - startX;
+  if (Math.abs(distance) < 70) return;
+  if (distance < 0) nextBtn.click();
+  else prevBtn.click();
+
   startX = 0;
   endX = 0;
 
@@ -54,32 +52,26 @@ sliderContainer.addEventListener("pointerup", (e) => {
 });
 
 nextBtn.addEventListener("click", (e) => {
-  if (compareBtnClickTime(lastClickNextBtn, e)) return;
-
   clearInterval(intervalId);
   currentIndex++;
   if (currentIndex > sliderLength) currentIndex = 0;
   slideChange(currentIndex, "right");
-  pauseAutoSlide();
+  autoChangeSlide();
 
 });
 
 prevBtn.addEventListener("click", (e) => {
-  if (compareBtnClickTime(lastClickPrevBtn, e)) {
-    console.log("exe");
-    return;
-  }
   clearInterval(intervalId);
   currentIndex--;
   if (currentIndex < 0) currentIndex = sliderLength;
   slideChange(currentIndex, "left");
-  pauseAutoSlide();
+  autoChangeSlide();
 
 
 });
 
 function slideChange(currentIndex, direction = "right") {
-  
+
   [...sliders].forEach(slider => {
     slider.classList.remove("animate-right", "active", "animate-left");
   });
@@ -90,37 +82,19 @@ function slideChange(currentIndex, direction = "right") {
   sliders[currentIndex].classList.add("active");
   updateIndicator(currentIndex, direction);
 }
-
 function updateIndicator(index, direction) {
   if (index === 0 || (direction === "left" && index == sliderLength)) indicator.style.transition = "none";
   else indicator.style.transition = "left .6s ease-in-out";
   indicator.style.left = `${index * indicatorWidth}%`;
 }
 
-function pauseAutoSlide() {
 
-  clearTimeout(setTimeoutId);
-  setTimeoutId = setTimeout(() => {
-    autoChangeSlide();
-    console.log("setimeout triggered")
-  }, 1000);
-}
-function compareBtnClickTime(lastClick, e) {
-  const now = Date.now();
-
-  if ((now - lastClick) < 1200) return true;
-  if (e.target.classList.contains("next")) lastClickNextBtn = now;
-  else lastClickPrevBtn = now;
-
-  return false;
-
-}
 function autoChangeSlide() {
   intervalId = setInterval(() => {
     currentIndex++;
     if (currentIndex > sliderLength) currentIndex = 0;
     slideChange(currentIndex);
-  }, 2500);
+  }, 2900);
 
 }
 
@@ -159,6 +133,11 @@ var swiper = new Swiper(".slide-container", {
     },
   },
 });
+
+
+
+
+
 //initalizer
 (function () {
   slideChange(currentIndex);

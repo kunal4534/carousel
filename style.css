@@ -22,13 +22,6 @@ body {
 
 }
 
-.slide-container {
-    position: relative;
-    overflow: hidden;
-    user-select: none;
-
-}
-
 .page-header {
     padding-top: 10px;
     padding-bottom: 0px;
@@ -98,12 +91,23 @@ body {
     height: 100%;
 }
 
+
+
+/* carousel-wrapper */
+
 .carousel-wrapper {
     position: relative;
     top: -40px;
     z-index: 1;
     user-select: none;
     touch-action: none;
+
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    user-select: none;
 
 }
 
@@ -144,8 +148,11 @@ body {
     object-fit: cover;
     object-position: center;
     filter: blur(0px) brightness(100%);
+    pointer-events: none;
 
 }
+
+
 
 /* slider-items */
 .slider-items {
@@ -242,14 +249,13 @@ body {
     color: white;
 }
 
+/* indicator styles */
 .indicator-path {
     position: relative;
     margin-block: 1.3rem;
     height: .8px;
     background-color: rgba(142, 142, 142, 0.824);
     position: relative;
-
-
 
 }
 
@@ -263,6 +269,8 @@ body {
     left: 0;
 
 }
+
+/* slider-animations */
 
 .animate-left {
     animation: leftSlideIn 800ms ease forwards;
@@ -310,10 +318,12 @@ body {
 
 /* card-slider-section */
 .card-slider-section {
+    user-select: none;
     color: white;
     position: relative;
-    margin-bottom: 3rem;
-    padding-block: 2.5rem;
+    margin-block: 3rem;
+    padding-bottom: 2.5rem;
+   
 }
 
 .video-bg-wrapper {
@@ -345,12 +355,14 @@ body {
 }
 
 
+.card-slider-container{
+    gap: 6px;
+    align-items: stretch;
+}
 .slide-container {
     border-radius: 12px;
-    overflow: hidden;
-
+    overflow-x: hidden;
 }
-
 
 .card {
     height: 210px;
@@ -440,10 +452,7 @@ body {
 .card:hover .card-content-box {
     transition: all .9s ease-in;
 }
-.card-slider-container{
-    gap: 6px;
-    align-items: stretch;
-}
+
 .buttons-box {
     display: flex;
     flex-direction: column;
@@ -456,14 +465,40 @@ body {
 .card-slider-prev-btn,
 .card-slider-next-btn{
     flex: 1;
-    font-size: 1em;
-    font-weight: 400;
     border-radius: 12px;
     background-color: var(--pirmay-btn-color);
     outline: none;
     border:none;
-    color: aliceblue;
+}
+.card-slider-prev-btn::after,
+.card-slider-next-btn::after{
+    content: "";
+    font-size: 35px;
+    font-weight: 600;
+    
+}
 
+.card-slider-prev-btn::after{
+    content: "\2039";
+    
+
+}
+.card-slider-next-btn::after{
+    content: "\203A";
+    
+    
+
+}
+
+
+.swiper-pagination-bullet {
+  background: #ffffff !important; 
+  width: 15px !important;
+  height: 15px !important;   
+}
+
+.swiper-pagination-bullet-active {
+  background: #a496f1 !important; /* active bullet color */
 }
 
 
