@@ -1,0 +1,21 @@
+{
+  "name": "imageslider",
+  "version": "1.1.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunal4534/carousel.git"
+  },
+  "author": "kunal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kunal4534/carousel/issues"
+  },
+  "homepage": "https://github.com/kunal4534/carousel#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}
